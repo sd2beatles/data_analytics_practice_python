@@ -21,7 +21,7 @@ Source: [https://www.kaggle.com/spscientist/students-performance-in-exams]
 
 ### 2) Data Manipulation 
 
-1. Data Preapreation 
+#### 1. Data Preapreation 
 
 ```python
 import numpy as np
@@ -42,7 +42,7 @@ df.head()
  data1 사진 넣기 
  
  
- 2. Checking The Missing Entries
+ #### 2. Checking The Missing Entries
  
  [ENG] To check if there are missing entries emobided in the data-set,  isnull().any() method is employed to detect them. 
        However,  the results return all False and we do not take extra measures to deal with them. 
@@ -51,7 +51,8 @@ df.head()
        모든 필드(field)에서 False값을 반환했기 때문에, 추가저인 조취는 필요해 보이지 않습니다. 
       
  data2 사진 넣기 
- 3. Filtering Out Irrevalent Information 
+ 
+ #### 3. Filtering Out Irrevalent Information 
  
  [ENG]What we are interested in is, regardless of ethnicity or race, the influence of parent's education level on children's 
       academic performace.Furthemore, the code code Furthermore, the code labels( ie 'A', 'B' and 'C') are not specifically designated         names, leading to confusion and ambiguity to data analysis.Therefore we should take away the columns named "race/ethnicity
@@ -66,7 +67,7 @@ df.head()
   ```
   data3 사진넣기 
   
-  4. Correlation Among Subjects 
+ #### 4. Correlation Among Subjects 
   
   
   
