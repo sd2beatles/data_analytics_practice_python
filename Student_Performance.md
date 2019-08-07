@@ -50,9 +50,23 @@ df.head()
  [KOR] 데이터의 내재된 결측값을 확인하기 위해서, 우리는 isnull().any() 메소드를 이용하여 찾아보았습니다. 이에 대한 결과로 
        모든 필드(field)에서 False값을 반환했기 때문에, 추가저인 조취는 필요해 보이지 않습니다. 
       
-      
+ data2 사진 넣기 
  3. Filtering Out Irrevalent Information 
- [ENG]What we are interested in is, regardless of ethnicity or race, the influence of parent's education level on that of children. 
-      Therefore we should take away the columns named "race/ethnicity". 
  
+ [ENG]What we are interested in is, regardless of ethnicity or race, the influence of parent's education level on children's 
+      academic performace.Furthemore, the code code Furthermore, the code labels( ie 'A', 'B' and 'C') are not specifically designated         names, leading to confusion and ambiguity to data analysis.Therefore we should take away the columns named "race/ethnicity
+ 
+ [KOR] 우리가 관심있는 것은 민족과 인종에 상관없이 부모의 학업수준이 아이들에게 미치는 영향입니다. 게다가, 코드 레벨값이 정확하게 주어지지 
+       않아서, 오히려 데이터 분석에 혼란을 가중시킬 수 있습니다. 이러한 이후로 우리는 열 "race/enthnicity"를 배제하도록 합니다. 
+       
+    
+  ```python
+  df=df.drop("race/"ethnicity",axis=1)
+  df.head 
+  ```
+  data3 사진넣기 
+  
+  4. Correlation Among Subjects 
+  
+  
   
